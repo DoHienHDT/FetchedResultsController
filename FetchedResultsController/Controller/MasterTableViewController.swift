@@ -10,7 +10,6 @@ import UIKit
 import CoreData
 
 class MasterTableViewController: UITableViewController, NSFetchedResultsControllerDelegate {
-
     var fetchedResultsController = DataService.shared.fetchedResultsController
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -39,11 +38,13 @@ class MasterTableViewController: UITableViewController, NSFetchedResultsControll
         let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
         // Configure the cell...
         let student = fetchedResultsController.object(at: indexPath)
-        configureCell(cell, withStudent: student)
+        configureCell(cell as! TableViewCell, withStudent: student)
         return cell
     }
-    func configureCell(_ cell: UITableViewCell, withStudent student: Student) {
-        cell.textLabel?.text = student.name
+    func configureCell(_ cell: TableViewCell, withStudent student: Student) {
+        cell.nameLabel.text = student.name
+        cell.ageLabel.text = String(student.age)
+        cell.photoImage.image = student.image as? UIImage
     }
     // Override to support conditional editing of the table view.
     override func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
@@ -70,9 +71,9 @@ class MasterTableViewController: UITableViewController, NSFetchedResultsControll
         case .delete:
             tableView.deleteRows(at: [indexPath!], with: .fade)
         case .update:
-            configureCell(tableView.cellForRow(at: indexPath!)!, withStudent: anObject as! Student)
+            configureCell(tableView.cellForRow(at: indexPath!)! as! TableViewCell, withStudent: anObject as! Student)
         case .move:
-            configureCell(tableView.cellForRow(at: indexPath!)!, withStudent: anObject as! Student)
+            configureCell(tableView.cellForRow(at: indexPath!)! as! TableViewCell, withStudent: anObject as! Student)
             tableView.moveRow(at: indexPath!, to: newIndexPath!)
         }
     }
