@@ -8,7 +8,7 @@
 
 import UIKit
 import CoreData
-import os.log
+//import os.log
 class DetailViewController: UIViewController , UITextFieldDelegate , UIImagePickerControllerDelegate, UINavigationControllerDelegate{
     @IBOutlet weak var inputTextField: UITextField!
     @IBOutlet weak var ageTextField: UITextField!

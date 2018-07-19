@@ -15,7 +15,6 @@
 		8059D1E120FF34D8003527E2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8059D1DF20FF34D8003527E2 /* LaunchScreen.storyboard */; };
 		8059D1E920FF3506003527E2 /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8059D1E820FF3506003527E2 /* DataService.swift */; };
 		8059D1EB20FF3723003527E2 /* MasterTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8059D1EA20FF3723003527E2 /* MasterTableViewController.swift */; };
-		80B1CA1820FF5ED800AD01D7 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80B1CA1720FF5ED800AD01D7 /* TableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,7 +28,6 @@
 		8059D1E220FF34D8003527E2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8059D1E820FF3506003527E2 /* DataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
 		8059D1EA20FF3723003527E2 /* MasterTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MasterTableViewController.swift; sourceTree = "<group>"; };
-		80B1CA1720FF5ED800AD01D7 /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,7 +84,6 @@
 		80B1CA1520FF5EB600AD01D7 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				80B1CA1720FF5ED800AD01D7 /* TableViewCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -175,7 +172,6 @@
 				8059D1D620FF34D8003527E2 /* DetailViewController.swift in Sources */,
 				8059D1D420FF34D8003527E2 /* AppDelegate.swift in Sources */,
 				8059D1DC20FF34D8003527E2 /* FetchedResultsController.xcdatamodeld in Sources */,
-				80B1CA1820FF5ED800AD01D7 /* TableViewCell.swift in Sources */,
 				8059D1EB20FF3723003527E2 /* MasterTableViewController.swift in Sources */,
 				8059D1E920FF3506003527E2 /* DataService.swift in Sources */,
 			);
